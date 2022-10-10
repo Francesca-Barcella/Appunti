@@ -14,6 +14,7 @@ for (let i=0; i < 1001; i++){
 
 */
 
+/* #region 2° live 
 for (let i=1000; i>=0; i--){
     console.log(i);    
 }
@@ -21,6 +22,22 @@ for (let i=1000; i>=0; i--){
 const olElement = document.querySelector('ol.elenco');
 
 for (let i=10; i>=20; i--){
-    let liElement = `<li class="box_${i}">${i}</li>`;
-    olElement.insertAdjacentElement('afterbegin', liElement);
+    let liElement = `<li class="box box_${i}">${i}</li>`;
+    olElement.insertAdjacentHTML('afterbegin', liElement);
 }
+*/
+
+// #region 3° live 
+const ulElement3 = document.querySelector('.ul_3');
+
+for (let i=25; i<=50; i++){
+    console.log(i);
+    //creare li utilizzando document.create
+    const li = document.createElement('li');
+    //appendo a li la variabile i
+    li.append(i);
+    //appendo li a ul
+    ulElement3.append(li);
+}
+
+
