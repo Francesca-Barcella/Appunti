@@ -1,6 +1,6 @@
 // stampare in console tutti i numeri da 0 fino 1000
 
-/* #region 1° live 
+// #region 1° live 
 
 const ulElement = document.querySelector ('ul');
 
@@ -12,9 +12,8 @@ for (let i=0; i < 1001; i++){
     ulElement.innerHTML += `<li> ${i} </li>`
 }
 
-*/
 
-/* #region 2° live 
+// #region 2° live 
 for (let i=1000; i>=0; i--){
     console.log(i);    
 }
@@ -25,7 +24,7 @@ for (let i=10; i>=20; i--){
     let liElement = `<li class="box box_${i}">${i}</li>`;
     olElement.insertAdjacentHTML('afterbegin', liElement);
 }
-*/
+
 
 // #region 3° live 
 const ulElement3 = document.querySelector('.ul_3');
